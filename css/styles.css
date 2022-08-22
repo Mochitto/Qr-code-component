@@ -3,10 +3,12 @@
  *              BASE                 *
  ************************************* */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 63.5%; }
+  font-size: 63.5%;
+}
 
 body {
   background-color: #d6e2f0;
@@ -15,25 +17,36 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   /* To account for the attribution component */
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 h1 {
   color: #1f3251;
   font-weight: 700;
   font-size: 2.2rem;
-  margin: 10px 0; }
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
 
 p {
-  margin: 15px 10px; }
+  margin: 15px 10px;
+}
 
 span {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 h1, p {
-  padding: 0 5%; }
+  padding: 0 5%;
+}
 
 h1, p, a {
-  text-align: center; }
+  text-align: center;
+}
 
 /*************************************
  *              LAYOUT               *
@@ -42,17 +55,29 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
+
+.QR-code {
+  position: relative;
+}
 
 .hidden-url {
+  /* Centering the Span */
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  /* Get on top of the image */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .attribution {
   position: fixed;
   top: calc(100vh - 15px);
-  width: 100%; }
+  width: 100%;
+}
 
 /*************************************
  *              MODULES              *
@@ -61,29 +86,30 @@ body {
   background-color: white;
   width: 320px;
   height: 497px;
-  border-radius: 20px; }
+  border-radius: 20px;
+}
 
 .QR-code {
   height: 289px;
   width: 290px;
   margin: 15px;
   background-color: #1f3251;
-  background: #1f3251 url(../images/image-qr-code.png);
-    background-position: center;
-    background-size: cover;
-  display: inline-block; }
+}
 
 .hidden-url {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all 0.8s; }
+  transition: all 0.8s;
+}
 
 .hidden-message {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
-.QR-code, .hidden-url {
-  border-radius: 10px; }
+.QR-code, .hidden-url, .QR-code img {
+  border-radius: 10px;
+}
 
 .attribution {
   background-color: #1f3251;
@@ -91,20 +117,24 @@ body {
   width: 100%;
   height: 15px;
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+}
 
 /*************************************
  *              STATES               *
  ************************************* */
 a:visited, a:link {
   color: #d1e0fa;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .QR-code:hover .hidden-url, .hidden-url:focus-visible {
   opacity: 1;
-  background: rgba(31, 50, 81, 0.9); }
+  background: rgba(31, 50, 81, 0.9);
+}
 
 .QR-code:hover .hidden-message, .hidden-url:focus-visible .hidden-message {
-  visibility: visible; }
+  visibility: visible;
+}
 
 /*# sourceMappingURL=styles.css.map */
