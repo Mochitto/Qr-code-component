@@ -33,7 +33,7 @@
 
 As the component is static, I went with a desktop-first approach.
 I had some difficulties yet again with trying to make it responsive, later noticing it wasn't necessary.
-For accessibility and due to wondering if the user might want to go directly to the website, I've added an anchor on hover to the QR-code.
+For accessibility and due to wondering if the user might want to go directly to the website, I've added an anchor on hover or focus to the QR-code.
 
 | Card when hovering the QR-Code |
 | :--------: |
