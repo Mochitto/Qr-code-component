@@ -1,0 +1,109 @@
+/* This CSS was precompiled in sass and its parts divided following the SMACSS structure */
+/*************************************
+ *              BASE                 *
+ ************************************* */
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 63.5%; }
+
+body {
+  background-color: #d6e2f0;
+  color: #7b879d;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /* To account for the attribution component */
+  margin-bottom: 15px; }
+
+h1 {
+  color: #1f3251;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 10px 0; }
+
+p {
+  margin: 15px 10px; }
+
+span {
+  font-size: 2rem; }
+
+h1, p {
+  padding: 0 5%; }
+
+h1, p, a {
+  text-align: center; }
+
+/*************************************
+ *              LAYOUT               *
+ ************************************* */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.hidden-url {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.attribution {
+  position: fixed;
+  top: calc(100vh - 15px);
+  width: 100%; }
+
+/*************************************
+ *              MODULES              *
+ ************************************* */
+.card {
+  background-color: white;
+  width: 320px;
+  height: 497px;
+  border-radius: 20px; }
+
+.QR-code {
+  height: 289px;
+  width: 290px;
+  margin: 15px;
+  background-color: #1f3251;
+  background: #1f3251 url(../images/image-qr-code.png);
+    background-position: center;
+    background-size: cover;
+  display: inline-block; }
+
+.hidden-url {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.8s; }
+
+.hidden-message {
+  visibility: hidden; }
+
+.QR-code, .hidden-url {
+  border-radius: 10px; }
+
+.attribution {
+  background-color: #1f3251;
+  color: plum;
+  width: 100%;
+  height: 15px;
+  font-size: 11px;
+  text-align: center; }
+
+/*************************************
+ *              STATES               *
+ ************************************* */
+a:visited, a:link {
+  color: #d1e0fa;
+  text-decoration: none; }
+
+.QR-code:hover .hidden-url {
+  opacity: 1;
+  background: rgba(31, 50, 81, 0.9); }
+.QR-code:hover .hidden-message {
+  visibility: visible; }
+
+/*# sourceMappingURL=styles.css.map */
