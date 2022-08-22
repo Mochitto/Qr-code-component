@@ -100,10 +100,11 @@ a:visited, a:link {
   color: #d1e0fa;
   text-decoration: none; }
 
-.QR-code:hover .hidden-url {
+.QR-code:hover .hidden-url, .hidden-url:focus-visible {
   opacity: 1;
   background: rgba(31, 50, 81, 0.9); }
-.QR-code:hover .hidden-message {
+
+.QR-code:hover .hidden-message, .hidden-url:focus-visible .hidden-message {
   visibility: visible; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,10 +3,10 @@ a
         color: hsl(218, 80%, 90%)
         text-decoration: none
 
-.QR-code:hover 
-    & .hidden-url
-        opacity: 1
-        background: hsla(218, 44%, 22%, 0.9)
-    & .hidden-message
-        visibility: visible
+.QR-code:hover .hidden-url, .hidden-url:focus-visible
+    opacity: 1
+    background: hsla(218, 44%, 22%, 0.9)
+
+.QR-code:hover .hidden-message, .hidden-url:focus-visible .hidden-message
+    visibility: visible
     

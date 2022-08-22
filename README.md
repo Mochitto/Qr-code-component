@@ -10,8 +10,6 @@
 - [Author](#author)
 - [Challenge source](#challenge-source)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -28,8 +26,8 @@
 
 ### Links
 
-- Solution URL: [You can find it here!](https://your-solution-url.com)
-- Live Site URL: [You can find it here!](https://your-live-site-url.com)
+- Solution URL: [You can find it here!](https://www.frontendmentor.io/solutions/qr-card-component-made-with-flexbox-sass-and-smacss-VfBFgx6Rl4)
+- Live Site URL: [You can find it here!](https://mochitto.github.io/Qr-code-component/)
 
 ## My process
 
@@ -63,8 +61,8 @@ I definitely want to understand better:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Mochitto)
-- Twitter - [@yourusername](https://twitter.com/mochideveloper)
+- Frontend Mentor - [@mochitto](https://www.frontendmentor.io/profile/Mochitto)
+- Twitter - [@mochideveloper](https://twitter.com/mochideveloper)
 
 # Challenge source
 
